@@ -1,0 +1,99 @@
+{
+    "os": "Linux-6.5.0-28-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-05-13T18:08:42.523758",
+    "startedAt": "2024-05-13T18:08:40.270970",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch",
+        "16",
+        "--epochs",
+        "55",
+        "--data",
+        "/home/runcandel/Desktop/ERA/training_images/data.yaml",
+        "--weights",
+        "yolov7_training.pt",
+        "--device",
+        "0"
+    ],
+    "state": "running",
+    "program": "/home/runcandel/yolov7/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/WongKinYiu/yolov7.git",
+        "commit": "a207844b1ce82d204ab36d87d496728d3d2348e7"
+    },
+    "email": null,
+    "root": "/home/runcandel/yolov7",
+    "host": "runcandel-ASUS-TUF-Gaming-F15-FX506LH-FX566LH",
+    "username": "runcandel",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2.7931250000000003,
+        "min": 800.0,
+        "max": 4500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.826,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.663,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.587,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.402,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.944,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.881,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.54,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.502,
+            "min": 800.0,
+            "max": 4500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 37.250511169433594,
+            "used": 23.078170776367188
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 11.512481689453125
+    }
+}

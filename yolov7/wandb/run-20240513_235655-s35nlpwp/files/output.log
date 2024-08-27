@@ -1,0 +1,227 @@
+Overriding model.yaml nc=80 with nc=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     16182  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+/home/runcandel/.local/lib/python3.10/site-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Model Summary: 255 layers, 6014038 parameters, 6014038 gradients, 13.2 GFLOPS
+Transferred 332/338 items from yolov7-tiny.pt
+Scaled weight_decay = 0.0005078125
+Optimizer groups: 58 .bias, 58 conv.weight, 55 other
+[34m[1mtrain: [39m[22mScanning '/home/runcandel/Desktop/ERA/training_images/train/labels.cache'
+[34m[1mval: [39m[22mScanning '/home/runcandel/Desktop/ERA/training_images/valid/labels.cache' i
+Image sizes 640 train, 640 test
+Using 5 dataloader workers
+Logging results to runs/train/exp6
+Starting training for 55 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+
+
+      0/54    0.287G    0.0846   0.01825         0    0.1029         5       640
+               Class      Images      Labels           P           R      mAP@.5
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+               Class      Images      Labels           P           R      mAP@.5
+               Class      Images      Labels           P           R      mAP@.5
+                 all           1           0           0           0           0           0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+      2/54    0.881G   0.08307   0.01724         0    0.1003         6       640
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+               Class      Images      Labels           P           R      mAP@.5
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+      3/54    0.881G   0.09495   0.01603         0     0.111        15       640
+      4/54    0.881G   0.09722   0.01457         0    0.1118         3       640
+      4/54    0.881G   0.09722   0.01457         0    0.1118         3       640
+      5/54    0.881G   0.09909    0.0148         0    0.1139        15       640
+      5/54    0.881G   0.09909    0.0148         0    0.1139        15       640
+                 all           1           0           0           0           0           0
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+               Class      Images      Labels           P           R      mAP@.5
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+      7/54    0.881G   0.06656   0.01251         0   0.07907         6       640
+               Class      Images      Labels           P           R      mAP@.5
+      7/54    0.881G   0.06656   0.01251         0   0.07907         6       640
+      8/54    0.881G   0.08076   0.01186         0   0.09262         7       640
+      9/54    0.889G   0.06756    0.0117         0   0.07926         6       640
+      9/54    0.889G   0.06756    0.0117         0   0.07926         6       640
+     10/54    0.889G   0.08935    0.0109         0    0.1003         8       640
+     10/54    0.889G   0.08935    0.0109         0    0.1003         8       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+     11/54    0.891G   0.06793   0.01007         0     0.078        15       640
+     11/54    0.891G   0.06793   0.01007         0     0.078        15       640
+     12/54    0.891G   0.06473   0.01019         0   0.07492        10       640
+     13/54    0.891G   0.06155  0.009507         0   0.07106        10       640
+     13/54    0.891G   0.06155  0.009507         0   0.07106        10       640
+     14/54    0.891G   0.04949  0.009884         0   0.05937        13       640
+     14/54    0.891G   0.04949  0.009884         0   0.05937        13       640
+     15/54    0.891G   0.05739   0.00832         0   0.06571        10       640
+     15/54    0.891G   0.05739   0.00832         0   0.06571        10       640
+     16/54    0.891G   0.05157  0.008267         0   0.05983         5       640
+     16/54    0.891G   0.05157  0.008267         0   0.05983         5       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+     17/54    0.891G   0.04855  0.007778         0   0.05632         6       640
+     17/54    0.891G   0.04855  0.007778         0   0.05632         6       640
+     18/54    0.891G   0.04959  0.007575         0   0.05717        18       640
+     18/54    0.891G   0.04959  0.007575         0   0.05717        18       640
+     19/54    0.891G   0.05418  0.007238         0   0.06142        10       640
+     19/54    0.891G   0.05418  0.007238         0   0.06142        10       640
+     20/54    0.891G   0.06286  0.007526         0   0.07038        20       640
+     20/54    0.891G   0.06286  0.007526         0   0.07038        20       640
+     21/54    0.891G   0.05478  0.006718         0   0.06149         8       640
+     21/54    0.891G   0.05478  0.006718         0   0.06149         8       640
+     22/54    0.891G   0.04726  0.006629         0   0.05389         6       640
+     22/54    0.891G   0.04726  0.006629         0   0.05389         6       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+                 all           1           1     0.00714           1     0.00804     0.00563
+     24/54    0.891G   0.03891    0.0069         0   0.04581         4       640
+     24/54    0.891G   0.03891    0.0069         0   0.04581         4       640
+     25/54    0.891G   0.07234  0.005601         0   0.07794         5       640
+     25/54    0.891G   0.07234  0.005601         0   0.07794         5       640
+     26/54    0.891G   0.05788  0.006235         0   0.06412         8       640
+     26/54    0.891G   0.05788  0.006235         0   0.06412         8       640
+     27/54    0.891G   0.06061  0.005895         0   0.06651        12       640
+     27/54    0.891G   0.06061  0.005895         0   0.06651        12       640
+     28/54    0.891G   0.04787  0.006366         0   0.05424        12       640
+     28/54    0.891G   0.04787  0.006366         0   0.05424        12       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+     29/54    0.891G   0.05646  0.005378         0   0.06184         5       640
+     30/54    0.891G    0.0584  0.005597         0   0.06399        19       640
+     30/54    0.891G    0.0584  0.005597         0   0.06399        19       640
+     31/54    0.891G   0.03664  0.005152         0   0.04179         3       640
+     31/54    0.891G   0.03664  0.005152         0   0.04179         3       640
+     32/54    0.891G   0.04326   0.00489         0   0.04815        12       640
+     32/54    0.891G   0.04326   0.00489         0   0.04815        12       640
+     33/54    0.891G   0.04359   0.00498         0   0.04857         7       640
+     33/54    0.891G   0.04359   0.00498         0   0.04857         7       640
+     34/54    0.891G   0.03208  0.004451         0   0.03653         9       640
+     34/54    0.891G   0.03208  0.004451         0   0.03653         9       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+                 all           1           1     0.00333           1     0.00342      0.0024
+     36/54    0.891G   0.05438  0.005316         0   0.05969         5       640
+     36/54    0.891G   0.05438  0.005316         0   0.05969         5       640
+     37/54    0.891G   0.05114  0.004948         0   0.05609        17       640
+     37/54    0.891G   0.05114  0.004948         0   0.05609        17       640
+     38/54    0.891G   0.05191  0.004818         0   0.05673         8       640
+     38/54    0.891G   0.05191  0.004818         0   0.05673         8       640
+     39/54    0.891G   0.05184  0.004299         0   0.05614         2       640
+     39/54    0.891G   0.05184  0.004299         0   0.05614         2       640
+     40/54    0.891G   0.04669  0.004311         0     0.051         2       640
+     40/54    0.891G   0.04669  0.004311         0     0.051         2       640
+     41/54    0.891G   0.04779  0.005386         0   0.05318        10       640
+     41/54    0.891G   0.04779  0.005386         0   0.05318        10       640
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+  0%|                                                     | 0/5 [00:00<?, ?it/s]
+                 all           1           0           0           0           0           0
+     43/54    0.891G   0.04548   0.00502         0    0.0505         9       640
+     43/54    0.891G   0.04548   0.00502         0    0.0505         9       640
+                 all           1           0           0           0           0           0
+     45/54    0.891G    0.0498  0.004656         0   0.05446         8       640
+     45/54    0.891G    0.0498  0.004656         0   0.05446         8       640
+     46/54    0.891G   0.04935  0.004953         0   0.05431        15       640
+     46/54    0.891G   0.04935  0.004953         0   0.05431        15       640
+     47/54    0.891G   0.04129  0.004493         0   0.04578        14       640
+     47/54    0.891G   0.04129  0.004493         0   0.04578        14       640
+     48/54    0.891G   0.05697  0.004652         0   0.06163        11       640
+     48/54    0.891G   0.05697  0.004652         0   0.06163        11       640
+     49/54    0.891G   0.03925  0.005637         0   0.04488        14       640
+     49/54    0.891G   0.03925  0.005637         0   0.04488        14       640
+     49/54    0.891G   0.03393  0.005097         0   0.03903         8       640
+     50/54    0.891G   0.04568  0.005592         0   0.05127        10       640
+     50/54    0.891G   0.04568  0.005592         0   0.05127        10       640
+     51/54    0.891G   0.04207  0.005322         0   0.04739        16       640
+     51/54    0.891G   0.04207  0.005322         0   0.04739        16       640
+     52/54    0.891G   0.04787  0.004956         0   0.05282         8       640
+     52/54    0.891G   0.04787  0.004956         0   0.05282         8       640
+     53/54    0.891G   0.04626  0.005221         0   0.05149        10       640
+     53/54    0.891G   0.04626  0.005221         0   0.05149        10       640
+     54/54    0.891G    0.0505  0.005496         0   0.05599        15       640
+     54/54    0.891G    0.0505  0.005496         0   0.05599        15       640
+     54/54    0.891G    0.0432  0.004875         0   0.04807         5       640
+     54/54    0.891G    0.0432  0.004875         0   0.04807         5       640
+Optimizer stripped from runs/train/exp6/weights/last.pt, 12.3MB
+Optimizer stripped from runs/train/exp6/weights/best.pt, 12.3MB
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+Images sizes do not match. This will causes images to be display incorrectly in the UI.

@@ -1,0 +1,872 @@
+2024-05-13 23:56:55,410 INFO    StreamThr :7208 [internal.py:wandb_internal():85] W&B internal server running at pid: 7208, started at: 2024-05-13 23:56:55.410445
+2024-05-13 23:56:55,412 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status
+2024-05-13 23:56:55,412 INFO    WriterThread:7208 [datastore.py:open_for_write():87] open: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/run-s35nlpwp.wandb
+2024-05-13 23:56:55,413 DEBUG   SenderThread:7208 [sender.py:send():378] send: header
+2024-05-13 23:56:55,415 DEBUG   SenderThread:7208 [sender.py:send():378] send: run
+2024-05-13 23:56:55,423 INFO    SenderThread:7208 [sender.py:_setup_resume():748] checking resume status for None/YOLOR/s35nlpwp
+2024-05-13 23:56:56,847 INFO    SenderThread:7208 [dir_watcher.py:__init__():211] watching files in: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files
+2024-05-13 23:56:56,847 INFO    SenderThread:7208 [sender.py:_start_run_threads():1123] run started: s35nlpwp with start time 1715624815.410313
+2024-05-13 23:56:56,852 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: check_version
+2024-05-13 23:56:56,852 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: check_version
+2024-05-13 23:56:57,209 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: run_start
+2024-05-13 23:56:57,218 DEBUG   HandlerThread:7208 [system_info.py:__init__():26] System info init
+2024-05-13 23:56:57,218 DEBUG   HandlerThread:7208 [system_info.py:__init__():41] System info init done
+2024-05-13 23:56:57,218 INFO    HandlerThread:7208 [system_monitor.py:start():194] Starting system monitor
+2024-05-13 23:56:57,218 INFO    SystemMonitor:7208 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-13 23:56:57,219 INFO    HandlerThread:7208 [system_monitor.py:probe():214] Collecting system info
+2024-05-13 23:56:57,219 INFO    SystemMonitor:7208 [interfaces.py:start():188] Started cpu monitoring
+2024-05-13 23:56:57,219 INFO    SystemMonitor:7208 [interfaces.py:start():188] Started disk monitoring
+2024-05-13 23:56:57,220 INFO    SystemMonitor:7208 [interfaces.py:start():188] Started gpu monitoring
+2024-05-13 23:56:57,220 INFO    SystemMonitor:7208 [interfaces.py:start():188] Started memory monitoring
+2024-05-13 23:56:57,221 INFO    SystemMonitor:7208 [interfaces.py:start():188] Started network monitoring
+2024-05-13 23:56:57,230 DEBUG   HandlerThread:7208 [system_info.py:probe():150] Probing system
+2024-05-13 23:56:57,231 DEBUG   HandlerThread:7208 [system_info.py:_probe_git():135] Probing git
+2024-05-13 23:56:57,234 DEBUG   HandlerThread:7208 [system_info.py:_probe_git():143] Probing git done
+2024-05-13 23:56:57,234 DEBUG   HandlerThread:7208 [system_info.py:probe():198] Probing system done
+2024-05-13 23:56:57,234 DEBUG   HandlerThread:7208 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-28-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-05-13T18:26:57.230371', 'startedAt': '2024-05-13T18:26:55.406226', 'docker': None, 'cuda': None, 'args': ('--batch', '5', '--epochs', '55', '--data', '/home/runcandel/Desktop/ERA/training_images/data.yaml', '--weights', 'yolov7-tiny.pt', '--device', '0'), 'state': 'running', 'program': '/home/runcandel/yolov7/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/WongKinYiu/yolov7.git', 'commit': 'a207844b1ce82d204ab36d87d496728d3d2348e7'}, 'email': None, 'root': '/home/runcandel/yolov7', 'host': 'runcandel-ASUS-TUF-Gaming-F15-FX506LH-FX566LH', 'username': 'runcandel', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2.9351249999999998, 'min': 800.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 4.21, 'min': 800.0, 'max': 4500.0}, {'current': 1.262, 'min': 800.0, 'max': 4500.0}, {'current': 4.2, 'min': 800.0, 'max': 4500.0}, {'current': 0.8, 'min': 800.0, 'max': 4500.0}, {'current': 4.229, 'min': 800.0, 'max': 4500.0}, {'current': 4.241, 'min': 800.0, 'max': 4500.0}, {'current': 4.2, 'min': 800.0, 'max': 4500.0}, {'current': 4.214, 'min': 800.0, 'max': 4500.0}], 'disk': {'/': {'total': 37.250511169433594, 'used': 23.08688735961914}}, 'gpu': 'NVIDIA GeForce GTX 1650', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650', 'memory_total': 4294967296}], 'memory': {'total': 11.512481689453125}}
+2024-05-13 23:56:57,234 INFO    HandlerThread:7208 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-13 23:56:57,234 INFO    HandlerThread:7208 [system_monitor.py:probe():227] Publishing system info
+2024-05-13 23:56:57,235 INFO    HandlerThread:7208 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-13 23:56:57,237 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:56:57,238 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-13 23:56:57,381 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-13 23:56:57,382 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: python_packages
+2024-05-13 23:56:57,424 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:56:57,425 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:56:57,849 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-metadata.json
+2024-05-13 23:56:57,849 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/requirements.txt
+2024-05-13 23:56:57,980 DEBUG   SenderThread:7208 [sender.py:send():378] send: telemetry
+2024-05-13 23:56:57,980 DEBUG   SenderThread:7208 [sender.py:send():378] send: telemetry
+2024-05-13 23:56:57,980 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:56:57,981 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:56:58,761 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/w6s78ra4-wandb-metadata.json
+2024-05-13 23:56:58,848 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:00,848 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:00,983 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:05,984 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:08,850 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:10,851 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:11,619 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:12,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:57:12,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:57:14,735 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:14,737 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:14,737 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:14,738 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:14,852 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:16,852 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:17,013 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:17,370 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:17,370 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:17,370 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:17,371 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:17,852 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:18,853 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:20,853 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:21,013 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,013 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_e56b6be47a67feb3f919.jpg with policy now
+2024-05-13 23:57:21,021 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,021 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg with policy now
+2024-05-13 23:57:21,029 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,029 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg with policy now
+2024-05-13 23:57:21,038 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,039 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg with policy now
+2024-05-13 23:57:21,045 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,045 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_7185be93ee548e98c253.jpg with policy now
+2024-05-13 23:57:21,053 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,053 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_c823415325b8bfd23f57.jpg with policy now
+2024-05-13 23:57:21,056 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,056 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_ee2d6f94bc0532483644.jpg with policy now
+2024-05-13 23:57:21,060 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,060 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_290e013720b8eb6d99bc.jpg with policy now
+2024-05-13 23:57:21,063 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,063 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_abcafa469036c5fa00f5.jpg with policy now
+2024-05-13 23:57:21,066 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:21,066 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg with policy now
+2024-05-13 23:57:21,136 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:21,137 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:21,137 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:21,137 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:21,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:21,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_ee2d6f94bc0532483644.jpg
+2024-05-13 23:57:21,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_290e013720b8eb6d99bc.jpg
+2024-05-13 23:57:21,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg
+2024-05-13 23:57:21,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_e56b6be47a67feb3f919.jpg
+2024-05-13 23:57:21,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg
+2024-05-13 23:57:21,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_7185be93ee548e98c253.jpg
+2024-05-13 23:57:21,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg
+2024-05-13 23:57:21,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg
+2024-05-13 23:57:21,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_c823415325b8bfd23f57.jpg
+2024-05-13 23:57:21,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_abcafa469036c5fa00f5.jpg
+2024-05-13 23:57:21,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media
+2024-05-13 23:57:21,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images
+2024-05-13 23:57:22,378 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:22,854 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:23,239 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/bx56y3i3-media/images/Mosaics_2_e56b6be47a67feb3f919.jpg
+2024-05-13 23:57:23,613 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:23,614 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:23,614 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:23,615 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:23,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:24,855 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:26,162 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:26,162 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png with policy now
+2024-05-13 23:57:26,163 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:26,163 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json with policy now
+2024-05-13 23:57:26,164 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:57:26,175 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:26,176 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:26,176 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:26,177 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:26,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:26,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:26,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json
+2024-05-13 23:57:26,856 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D
+2024-05-13 23:57:26,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:57:27,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:57:27,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:57:28,633 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:28,857 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:29,231 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:29,994 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/nx8ivgii-media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg
+2024-05-13 23:57:30,746 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:30,746 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:30,747 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:30,858 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-13 23:57:30,858 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:31,006 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/932plheb-media/images/Mosaics_2_c823415325b8bfd23f57.jpg
+2024-05-13 23:57:31,149 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:31,150 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:31,150 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:31,150 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:31,526 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/n9h7fmz2-media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg
+2024-05-13 23:57:31,859 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:32,078 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ghtikxdr-media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg
+2024-05-13 23:57:32,109 INFO    wandb-upload_2:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/k6313qiz-media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg
+2024-05-13 23:57:32,449 INFO    wandb-upload_8:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/rxwjj06i-media/images/Mosaics_2_abcafa469036c5fa00f5.jpg
+2024-05-13 23:57:32,594 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/nca6jy98-media/images/Mosaics_2_ee2d6f94bc0532483644.jpg
+2024-05-13 23:57:32,606 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/emmk6ybg-media/images/Mosaics_2_7185be93ee548e98c253.jpg
+2024-05-13 23:57:32,861 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:33,567 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:33,568 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:33,568 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:33,568 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:33,862 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:33,864 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/lnk94sb0-media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json
+2024-05-13 23:57:34,862 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:34,867 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/inipzfg2-media/images/Mosaics_2_290e013720b8eb6d99bc.jpg
+2024-05-13 23:57:35,940 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:35,999 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:36,000 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:36,000 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:36,000 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:36,863 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:36,864 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:38,519 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:38,519 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png with policy now
+2024-05-13 23:57:38,520 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:38,520 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json with policy now
+2024-05-13 23:57:38,522 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:57:38,532 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:38,533 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:38,533 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:38,533 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:38,864 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:38,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:38,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json
+2024-05-13 23:57:38,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png
+2024-05-13 23:57:38,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:57:38,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:57:39,297 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/zov5b9qx-media/images/Mosaics_2_e56b6be47a67feb3f919.jpg
+2024-05-13 23:57:40,041 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/fj85od9v-media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png
+2024-05-13 23:57:40,175 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/rny204lj-media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg
+2024-05-13 23:57:40,865 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:40,945 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:40,952 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:40,952 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:40,953 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:40,953 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:41,367 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ug1pdi7d-media/images/Mosaics_2_c823415325b8bfd23f57.jpg
+2024-05-13 23:57:41,866 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:42,225 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/a7wki1e7-media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json
+2024-05-13 23:57:42,321 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/9g6jwnev-media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json
+2024-05-13 23:57:42,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:57:42,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:57:42,415 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/v321zl9m-media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg
+2024-05-13 23:57:42,866 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:43,414 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:43,735 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:43,736 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:43,737 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:43,867 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:44,867 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:45,848 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:45,849 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:45,849 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:45,849 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:45,868 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:46,069 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:46,868 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:47,703 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/csv6iut7-media/images/Mosaics_2_ee2d6f94bc0532483644.jpg
+2024-05-13 23:57:48,158 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:48,159 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:48,159 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:48,159 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:48,788 INFO    wandb-upload_2:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/swsswpkd-media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg
+2024-05-13 23:57:48,869 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:48,870 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:49,144 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ydynwtgb-media/images/Mosaics_2_7185be93ee548e98c253.jpg
+2024-05-13 23:57:50,502 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/a1fwjbqe-media/images/Mosaics_2_290e013720b8eb6d99bc.jpg
+2024-05-13 23:57:50,566 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:50,566 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png with policy now
+2024-05-13 23:57:50,567 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:57:50,567 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json with policy now
+2024-05-13 23:57:50,568 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:57:50,579 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:50,580 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:50,580 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:50,581 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:50,870 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:50,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:50,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png
+2024-05-13 23:57:50,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json
+2024-05-13 23:57:50,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:57:50,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:57:51,205 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:52,213 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/hocw7nn5-media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg
+2024-05-13 23:57:52,704 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/svrs3gp6-media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json
+2024-05-13 23:57:52,704 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/k4xj9rdi-media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json
+2024-05-13 23:57:52,756 INFO    wandb-upload_8:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/niemnpxd-media/images/Mosaics_2_abcafa469036c5fa00f5.jpg
+2024-05-13 23:57:52,858 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:52,858 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:52,858 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:52,859 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:52,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:52,871 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:54,111 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/o64esl38-media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png
+2024-05-13 23:57:54,111 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ypng3sgl-media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png
+2024-05-13 23:57:54,246 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/wipbju3n-media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png
+2024-05-13 23:57:54,371 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/yfj8j6tt-media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json
+2024-05-13 23:57:54,872 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:55,156 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:55,157 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:55,157 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:55,157 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:55,873 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:56,282 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:57:56,686 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/lsb7jm0o-media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png
+2024-05-13 23:57:56,801 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/rscnt9eo-media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png
+2024-05-13 23:57:56,873 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:57,221 DEBUG   SystemMonitor:7208 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-13 23:57:57,222 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-13 23:57:57,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:57:57,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:57:57,486 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:57,795 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:57,795 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:57,795 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:57,873 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:57:58,874 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:57:59,755 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:57:59,755 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:57:59,755 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:57:59,756 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:57:59,874 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:00,875 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:01,683 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:02,132 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:02,178 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:02,178 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png with policy now
+2024-05-13 23:58:02,178 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:02,178 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json with policy now
+2024-05-13 23:58:02,179 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:58:02,179 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:02,179 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:02,179 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png
+2024-05-13 23:58:02,876 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:58:02,877 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:58:03,411 INFO    wandb-upload_8:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/mdrwugx8-media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json
+2024-05-13 23:58:04,426 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:04,427 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:04,427 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:04,427 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:04,493 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/j15acp1k-media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png
+2024-05-13 23:58:04,741 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/nimn1iai-media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json
+2024-05-13 23:58:04,877 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:04,877 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:06,699 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:06,700 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:06,700 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:06,700 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:06,878 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:06,878 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:07,057 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/q8k5cmh2-media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png
+2024-05-13 23:58:07,342 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:08,878 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:08,987 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:08,988 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:08,988 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:08,989 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:09,879 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:10,879 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:11,313 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:11,314 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:11,314 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:11,315 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:11,880 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:12,373 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:12,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:58:12,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:58:12,881 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:13,703 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:13,703 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png with policy now
+2024-05-13 23:58:13,704 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:13,704 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json with policy now
+2024-05-13 23:58:13,706 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:58:13,716 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:13,717 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:13,717 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:13,717 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:13,881 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:13,881 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png
+2024-05-13 23:58:13,882 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json
+2024-05-13 23:58:13,882 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:58:13,882 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:58:14,882 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:15,030 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/49ormiig-media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json
+2024-05-13 23:58:16,089 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:16,090 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:16,090 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:16,091 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:16,208 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/vd43456i-media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png
+2024-05-13 23:58:16,883 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:16,883 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:17,529 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/mp40hyq4-media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json
+2024-05-13 23:58:17,720 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:18,478 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:18,479 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:18,479 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:18,479 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:18,884 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:18,884 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:20,885 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:20,900 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:20,901 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:20,901 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:20,901 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:21,885 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:22,885 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:22,906 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:23,248 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:23,249 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:23,249 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:23,250 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:23,886 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:24,886 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:25,590 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:25,590 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png with policy now
+2024-05-13 23:58:25,591 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:25,591 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json with policy now
+2024-05-13 23:58:25,592 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:58:25,603 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:25,604 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:25,604 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:25,605 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:25,887 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:25,887 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json
+2024-05-13 23:58:25,888 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png
+2024-05-13 23:58:25,888 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:58:25,888 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:58:26,210 INFO    wandb-upload_2:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/tlhbhezl-media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png
+2024-05-13 23:58:26,888 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:27,223 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-13 23:58:27,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:58:27,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:58:27,873 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:28,750 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:28,751 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:28,751 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:28,752 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:28,888 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:28,889 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:30,149 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:30,151 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:30,152 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:30,152 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:30,889 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:30,890 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:32,378 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:32,379 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:32,379 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:32,380 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:32,891 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:32,891 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:33,876 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:34,652 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:34,807 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:34,807 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:34,807 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:34,855 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/0zbffkkh-media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json
+2024-05-13 23:58:34,892 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-13 23:58:34,892 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:34,892 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:35,680 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/pc2d0dc6-media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png
+2024-05-13 23:58:36,893 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:37,098 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:37,098 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png with policy now
+2024-05-13 23:58:37,099 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/z4vxyatl-media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json
+2024-05-13 23:58:37,102 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:37,102 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json with policy now
+2024-05-13 23:58:37,102 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:58:37,112 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:37,113 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:37,113 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:37,114 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:37,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:37,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png
+2024-05-13 23:58:37,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json
+2024-05-13 23:58:37,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:58:37,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:58:38,894 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:39,368 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:39,369 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:39,369 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:39,369 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:39,510 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/33i1hhvy-media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json
+2024-05-13 23:58:39,895 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:40,012 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:40,895 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:41,635 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:41,635 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:41,636 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:41,636 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:41,896 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:42,050 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/btd49lsc-media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png
+2024-05-13 23:58:42,183 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/03zeiuau-media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png
+2024-05-13 23:58:42,382 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:58:42,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:58:42,896 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:43,332 INFO    wandb-upload_2:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/3kong7tl-media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json
+2024-05-13 23:58:43,917 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:43,918 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:43,918 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:43,919 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:44,897 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:44,897 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:44,930 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/sqgqxnab-media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png
+2024-05-13 23:58:45,419 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:46,174 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:46,175 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:46,175 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:46,176 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:46,898 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:46,898 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:48,534 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:48,534 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png with policy now
+2024-05-13 23:58:48,534 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:58:48,535 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json with policy now
+2024-05-13 23:58:48,537 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:58:48,546 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:48,547 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:48,547 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:48,547 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:48,899 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:48,899 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:48,899 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png
+2024-05-13 23:58:48,899 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json
+2024-05-13 23:58:48,900 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:58:48,900 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:58:49,960 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ge4r0ewn-media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json
+2024-05-13 23:58:50,544 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:50,879 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:50,879 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:50,880 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:50,880 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:50,900 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:50,900 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:51,497 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/ghwxnc06-media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png
+2024-05-13 23:58:52,901 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:52,931 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/tdbc3wg1-media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json
+2024-05-13 23:58:53,145 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:53,146 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:53,146 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:53,146 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:53,902 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:54,902 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:55,422 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:55,423 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:58:55,423 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:58:55,423 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:58:55,619 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:58:55,903 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:58:56,617 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/kmus9htl-media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png
+2024-05-13 23:58:56,903 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:58:57,223 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-13 23:58:57,383 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:58:57,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:58:57,668 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:58:58,904 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:00,046 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:00,905 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json
+2024-05-13 23:59:00,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png
+2024-05-13 23:59:00,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:59:00,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:59:00,971 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:00,971 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:00,971 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:00,972 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:00,972 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:00,972 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png with policy now
+2024-05-13 23:59:00,972 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:00,973 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json with policy now
+2024-05-13 23:59:00,973 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:59:00,973 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:00,973 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:00,973 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:01,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:02,368 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:02,368 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:02,368 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:02,369 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:02,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:02,906 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:03,768 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/1rk162l6-media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json
+2024-05-13 23:59:04,604 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:04,605 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:04,605 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:04,605 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:04,625 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/es9610n3-media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png
+2024-05-13 23:59:04,907 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:04,908 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:06,052 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/glun1dw5-media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json
+2024-05-13 23:59:06,116 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:06,871 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:06,872 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:06,872 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:06,872 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:06,908 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-13 23:59:06,909 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:06,909 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:08,652 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/vr2vfm6a-media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png
+2024-05-13 23:59:08,909 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:09,137 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:09,138 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:09,138 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:09,138 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:09,910 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:10,910 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:11,482 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:11,482 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png with policy now
+2024-05-13 23:59:11,483 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:11,483 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json with policy now
+2024-05-13 23:59:11,483 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:59:11,495 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:11,495 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:11,496 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:11,496 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:11,818 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:11,911 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:11,911 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png
+2024-05-13 23:59:11,911 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json
+2024-05-13 23:59:11,912 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:59:11,912 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:59:12,383 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:59:12,383 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:59:12,742 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/bozu6nfu-media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json
+2024-05-13 23:59:12,912 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:13,803 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/51ufhc5b-media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png
+2024-05-13 23:59:13,885 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:13,885 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:13,886 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:13,886 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:13,912 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:14,913 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:15,183 INFO    wandb-upload_8:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/acdwf3xu-media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json
+2024-05-13 23:59:16,329 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:16,330 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:16,330 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:16,330 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:16,914 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:16,914 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:17,072 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:17,892 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/v8bqjiw1-media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png
+2024-05-13 23:59:18,705 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:18,706 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:18,706 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:18,706 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:18,915 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:18,915 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:20,916 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:21,051 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:21,052 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:21,052 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:21,052 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:21,916 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:22,211 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:22,917 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:23,894 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:23,894 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Validation_54_b220983dbd92ed766812.jpg with policy now
+2024-05-13 23:59:23,896 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:23,896 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Validation_54_b846f28bc3927342703c.jpg with policy now
+2024-05-13 23:59:23,907 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:23,907 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png with policy now
+2024-05-13 23:59:23,908 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-13 23:59:23,908 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json with policy now
+2024-05-13 23:59:23,908 DEBUG   SenderThread:7208 [sender.py:send():378] send: config
+2024-05-13 23:59:23,917 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Validation_54_b220983dbd92ed766812.jpg
+2024-05-13 23:59:23,917 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png
+2024-05-13 23:59:23,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json
+2024-05-13 23:59:23,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Validation_54_b846f28bc3927342703c.jpg
+2024-05-13 23:59:23,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger
+2024-05-13 23:59:23,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger
+2024-05-13 23:59:23,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images
+2024-05-13 23:59:23,921 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:23,922 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-13 23:59:23,922 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-13 23:59:23,922 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-13 23:59:24,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:24,918 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-13 23:59:26,920 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-13 23:59:27,111 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/s0u4czoe-media/images/Validation_54_b846f28bc3927342703c.jpg
+2024-05-13 23:59:27,225 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-13 23:59:27,226 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-13 23:59:27,384 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-13 23:59:27,385 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: stop_status
+2024-05-13 23:59:28,162 INFO    wandb-upload_3:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/n1dy1fbz-media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json
+2024-05-13 23:59:28,961 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: log_artifact
+2024-05-13 23:59:28,961 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: log_artifact
+2024-05-13 23:59:29,070 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-13 23:59:29,925 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Results_55_2644108c3b5a296b297a.png
+2024-05-13 23:59:29,926 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_created():271] file/dir created: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Results_55_1149e7f003a7279bbd53.png
+2024-05-13 23:59:29,926 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images
+2024-05-13 23:59:30,071 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-13 23:59:30,287 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/olk6od3h-media/images/Validation_54_b220983dbd92ed766812.jpg
+2024-05-13 23:59:32,866 INFO    wandb-upload_2:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/cq42dlme-media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png
+2024-05-13 23:59:35,072 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-13 23:59:35,305 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/hz2tvq08-media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json
+2024-05-13 23:59:35,961 INFO    wandb-upload_8:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/jyly37vy-media/images/Results_55_2644108c3b5a296b297a.png
+2024-05-13 23:59:36,488 INFO    wandb-upload_9:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/1vlmkp36-media/images/Validation_54_b846f28bc3927342703c.jpg
+2024-05-13 23:59:40,073 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-13 23:59:42,536 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/oq6rhxfy-media/images/Validation_54_b220983dbd92ed766812.jpg
+2024-05-13 23:59:45,074 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-13 23:59:46,325 INFO    wandb-upload_6:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/uv7g75r2-media/images/Results_55_1149e7f003a7279bbd53.png
+2024-05-13 23:59:48,225 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/eubpxrza-media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png
+2024-05-13 23:59:50,075 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-13 23:59:55,077 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:00,079 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:05,081 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:10,084 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:15,085 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:20,087 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:25,089 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:30,090 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:35,091 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:35,465 INFO    wandb-upload_3:7208 [upload_job.py:push():88] Uploaded file /home/runcandel/.local/share/wandb/artifacts/staging/tmp4qexszmh
+2024-05-14 00:00:36,898 INFO    SenderThread:7208 [sender.py:send_request_log_artifact():1455] logged artifact run_s35nlpwp_model - {'id': 'QXJ0aWZhY3Q6ODM0NzA0NDUy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDIyMjE3NQ==', 'latestArtifact': None}}
+2024-05-14 00:00:36,903 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 00:00:37,349 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-14 00:00:37,349 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Results_55_1149e7f003a7279bbd53.png with policy now
+2024-05-14 00:00:37,349 DEBUG   SenderThread:7208 [sender.py:send():378] send: files
+2024-05-14 00:00:37,349 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file media/images/Results_55_2644108c3b5a296b297a.png with policy now
+2024-05-14 00:00:37,350 DEBUG   SenderThread:7208 [sender.py:send():378] send: history
+2024-05-14 00:00:37,350 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: summary_record
+2024-05-14 00:00:37,352 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 00:00:37,352 DEBUG   SenderThread:7208 [sender.py:send():378] send: telemetry
+2024-05-14 00:00:37,353 DEBUG   SenderThread:7208 [sender.py:send():378] send: exit
+2024-05-14 00:00:37,353 INFO    SenderThread:7208 [sender.py:send_exit():585] handling exit code: 0
+2024-05-14 00:00:37,353 INFO    SenderThread:7208 [sender.py:send_exit():587] handling runtime: 151
+2024-05-14 00:00:37,353 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 00:00:37,354 INFO    SenderThread:7208 [sender.py:send_exit():593] send defer
+2024-05-14 00:00:37,354 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:37,354 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,354 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-14 00:00:37,355 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-14 00:00:37,355 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-14 00:00:37,355 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,355 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-14 00:00:37,355 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 1
+2024-05-14 00:00:37,356 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,356 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-14 00:00:37,356 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,356 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-14 00:00:37,356 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 2
+2024-05-14 00:00:37,356 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,356 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-14 00:00:37,356 INFO    HandlerThread:7208 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-14 00:00:37,356 DEBUG   SystemMonitor:7208 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-14 00:00:37,356 INFO    HandlerThread:7208 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-14 00:00:37,356 DEBUG   SystemMonitor:7208 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-14 00:00:37,356 INFO    HandlerThread:7208 [interfaces.py:finish():200] Joined disk monitor
+2024-05-14 00:00:37,397 INFO    HandlerThread:7208 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-14 00:00:37,397 INFO    HandlerThread:7208 [interfaces.py:finish():200] Joined memory monitor
+2024-05-14 00:00:37,397 INFO    HandlerThread:7208 [interfaces.py:finish():200] Joined network monitor
+2024-05-14 00:00:37,397 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,397 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-14 00:00:37,398 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 3
+2024-05-14 00:00:37,398 DEBUG   SenderThread:7208 [sender.py:send():378] send: stats
+2024-05-14 00:00:37,398 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,398 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-14 00:00:37,398 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,398 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-14 00:00:37,398 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 4
+2024-05-14 00:00:37,398 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,398 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-14 00:00:37,398 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,398 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-14 00:00:37,398 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 5
+2024-05-14 00:00:37,398 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,398 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-14 00:00:37,399 DEBUG   SenderThread:7208 [sender.py:send():378] send: summary
+2024-05-14 00:00:37,399 INFO    SenderThread:7208 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-14 00:00:37,399 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,399 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-14 00:00:37,399 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 6
+2024-05-14 00:00:37,399 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:37,399 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-14 00:00:37,399 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:37,399 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-14 00:00:37,402 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 00:00:38,040 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-14 00:00:38,041 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-14 00:00:38,092 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:38,360 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 7
+2024-05-14 00:00:38,360 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:38,360 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:38,360 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-14 00:00:38,361 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:38,361 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-14 00:00:38,814 INFO    wandb-upload_5:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/2zwxh4lc-media/images/Results_55_2644108c3b5a296b297a.png
+2024-05-14 00:00:39,042 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-14 00:00:39,042 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-14 00:00:39,094 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:39,615 INFO    wandb-upload_0:7208 [upload_job.py:push():130] Uploaded file /tmp/tmp0tkv4cn7wandb/f8xqvrqp-media/images/Results_55_1149e7f003a7279bbd53.png
+2024-05-14 00:00:42,249 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 8
+2024-05-14 00:00:42,249 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:42,250 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:42,250 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-14 00:00:42,251 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:42,251 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-14 00:00:42,251 INFO    SenderThread:7208 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-14 00:00:42,253 INFO    SenderThread:7208 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-14 00:00:42,256 INFO    SenderThread:7208 [job_builder.py:build():541] adding wandb-job metadata file
+2024-05-14 00:00:42,261 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 9
+2024-05-14 00:00:42,261 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:42,262 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-14 00:00:42,262 DEBUG   SenderThread:7208 [sender.py:send():378] send: artifact
+2024-05-14 00:00:43,047 INFO    Thread-12 :7208 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-14 00:00:43,096 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:43,948 INFO    wandb-upload_8:7208 [upload_job.py:push():85] Skipped uploading /home/runcandel/.local/share/wandb/artifacts/staging/tmpc_518cbn
+2024-05-14 00:00:44,735 INFO    wandb-upload_2:7208 [upload_job.py:push():88] Uploaded file /tmp/tmprri71652/wandb-job.json
+2024-05-14 00:00:47,295 INFO    SenderThread:7208 [sender.py:send_artifact():1467] sent artifact job-https___github.com_WongKinYiu_yolov7.git_train.py - {'id': 'QXJ0aWZhY3Q6ODM0NzA1NDYx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDIxMTE1Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODM0Njg1NTU4', 'versionIndex': 1}}}
+2024-05-14 00:00:47,296 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:47,296 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-14 00:00:47,296 INFO    SenderThread:7208 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-14 00:00:47,296 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: status_report
+2024-05-14 00:00:48,050 INFO    SenderThread:7208 [dir_watcher.py:finish():388] scan: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files
+2024-05-14 00:00:48,050 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log output.log
+2024-05-14 00:00:48,051 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json wandb-summary.json
+2024-05-14 00:00:48,051 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/requirements.txt requirements.txt
+2024-05-14 00:00:48,052 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-metadata.json wandb-metadata.json
+2024-05-14 00:00:48,052 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml config.yaml
+2024-05-14 00:00:48,072 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg media/images/Mosaics_2_e0c816b857cd2e3bffdc.jpg
+2024-05-14 00:00:48,072 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_ee2d6f94bc0532483644.jpg media/images/Mosaics_2_ee2d6f94bc0532483644.jpg
+2024-05-14 00:00:48,073 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_290e013720b8eb6d99bc.jpg media/images/Mosaics_2_290e013720b8eb6d99bc.jpg
+2024-05-14 00:00:48,073 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Results_55_1149e7f003a7279bbd53.png media/images/Results_55_1149e7f003a7279bbd53.png
+2024-05-14 00:00:48,073 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg media/images/Mosaics_2_ceeecbe6b3532d4a73d2.jpg
+2024-05-14 00:00:48,073 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg media/images/Mosaics_2_7747ee2fd4d9be80ff8d.jpg
+2024-05-14 00:00:48,073 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_abcafa469036c5fa00f5.jpg media/images/Mosaics_2_abcafa469036c5fa00f5.jpg
+2024-05-14 00:00:48,074 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_7185be93ee548e98c253.jpg media/images/Mosaics_2_7185be93ee548e98c253.jpg
+2024-05-14 00:00:48,074 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_c823415325b8bfd23f57.jpg media/images/Mosaics_2_c823415325b8bfd23f57.jpg
+2024-05-14 00:00:48,074 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Validation_54_b220983dbd92ed766812.jpg media/images/Validation_54_b220983dbd92ed766812.jpg
+2024-05-14 00:00:48,074 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg media/images/Mosaics_2_66f10b3c6e84121a9e47.jpg
+2024-05-14 00:00:48,075 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Results_55_2644108c3b5a296b297a.png media/images/Results_55_2644108c3b5a296b297a.png
+2024-05-14 00:00:48,075 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Validation_54_b846f28bc3927342703c.jpg media/images/Validation_54_b846f28bc3927342703c.jpg
+2024-05-14 00:00:48,075 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Mosaics_2_e56b6be47a67feb3f919.jpg media/images/Mosaics_2_e56b6be47a67feb3f919.jpg
+2024-05-14 00:00:48,075 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_19_96a78324065fe262910e.png
+2024-05-14 00:00:48,076 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_49_96a78324065fe262910e.png
+2024-05-14 00:00:48,076 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_24_96a78324065fe262910e.png
+2024-05-14 00:00:48,076 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_14_96a78324065fe262910e.png
+2024-05-14 00:00:48,076 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_29_96a78324065fe262910e.png
+2024-05-14 00:00:48,077 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_39_96a78324065fe262910e.png
+2024-05-14 00:00:48,077 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_4_96a78324065fe262910e.png
+2024-05-14 00:00:48,077 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_44_96a78324065fe262910e.png
+2024-05-14 00:00:48,077 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_9_96a78324065fe262910e.png
+2024-05-14 00:00:48,077 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_54_96a78324065fe262910e.png
+2024-05-14 00:00:48,078 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png media/images/Bounding Box Debugger/Images_34_96a78324065fe262910e.png
+2024-05-14 00:00:48,078 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_44_3629889da9864f3b54eb.boxes2D.json
+2024-05-14 00:00:48,078 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_49_6b5d2418ea2726204fae.boxes2D.json
+2024-05-14 00:00:48,078 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_29_efa8eeb4b66cdcd176c1.boxes2D.json
+2024-05-14 00:00:48,079 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_9_1bff4ae3c0dae341fd0d.boxes2D.json
+2024-05-14 00:00:48,079 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_54_b583976e7e267a6c0fce.boxes2D.json
+2024-05-14 00:00:48,079 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_39_2ba0052a5dd89318653a.boxes2D.json
+2024-05-14 00:00:48,079 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_4_f40e4c8a8b1d3a449059.boxes2D.json
+2024-05-14 00:00:48,080 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_14_7cc9edac50d1c53e2c22.boxes2D.json
+2024-05-14 00:00:48,080 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_34_bb14da5090e2cdfa25e3.boxes2D.json
+2024-05-14 00:00:48,080 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_24_9e16e58e35ffb6175c67.boxes2D.json
+2024-05-14 00:00:48,080 INFO    SenderThread:7208 [dir_watcher.py:finish():402] scan save: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_19_8f0933d39def3a29bddc.boxes2D.json
+2024-05-14 00:00:48,080 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 10
+2024-05-14 00:00:48,081 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:48,081 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:48,081 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-14 00:00:48,083 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:48,083 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-14 00:00:48,083 INFO    SenderThread:7208 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-14 00:00:48,098 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: keepalive
+2024-05-14 00:00:48,099 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:48,099 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:48,998 INFO    wandb-upload_1:7208 [upload_job.py:push():130] Uploaded file /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/config.yaml
+2024-05-14 00:00:48,999 INFO    wandb-upload_4:7208 [upload_job.py:push():130] Uploaded file /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/wandb-summary.json
+2024-05-14 00:00:49,003 INFO    wandb-upload_10:7208 [upload_job.py:push():130] Uploaded file /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/requirements.txt
+2024-05-14 00:00:49,082 INFO    wandb-upload_7:7208 [upload_job.py:push():130] Uploaded file /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/files/output.log
+2024-05-14 00:00:49,100 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:49,100 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:49,284 INFO    Thread-11 (_thread_body):7208 [sender.py:transition_state():613] send defer: 11
+2024-05-14 00:00:49,285 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:49,285 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-14 00:00:49,285 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:49,286 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-14 00:00:49,286 INFO    SenderThread:7208 [file_pusher.py:join():175] waiting for file pusher
+2024-05-14 00:00:49,304 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 12
+2024-05-14 00:00:49,304 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:49,304 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-14 00:00:49,305 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:49,305 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-14 00:00:49,305 INFO    SenderThread:7208 [file_stream.py:finish():601] file stream finish called
+2024-05-14 00:00:50,101 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:50,495 INFO    SenderThread:7208 [file_stream.py:finish():605] file stream finish is done
+2024-05-14 00:00:50,496 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 13
+2024-05-14 00:00:50,496 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:50,496 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:50,497 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-14 00:00:50,498 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:50,498 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-14 00:00:50,498 INFO    SenderThread:7208 [sender.py:transition_state():613] send defer: 14
+2024-05-14 00:00:50,499 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: defer
+2024-05-14 00:00:50,499 INFO    HandlerThread:7208 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-14 00:00:50,499 DEBUG   SenderThread:7208 [sender.py:send():378] send: final
+2024-05-14 00:00:50,500 DEBUG   SenderThread:7208 [sender.py:send():378] send: footer
+2024-05-14 00:00:50,500 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: defer
+2024-05-14 00:00:50,500 INFO    SenderThread:7208 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-14 00:00:50,502 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-14 00:00:50,503 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: poll_exit
+2024-05-14 00:00:50,505 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-14 00:00:50,506 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: server_info
+2024-05-14 00:00:50,506 DEBUG   SenderThread:7208 [sender.py:send_request():405] send_request: server_info
+2024-05-14 00:00:50,548 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-14 00:00:50,549 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-14 00:00:50,882 DEBUG   HandlerThread:7208 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-14 00:00:50,883 INFO    HandlerThread:7208 [handler.py:finish():882] shutting down handler
+2024-05-14 00:00:51,507 INFO    WriterThread:7208 [datastore.py:close():296] close: /home/runcandel/yolov7/wandb/run-20240513_235655-s35nlpwp/run-s35nlpwp.wandb
+2024-05-14 00:00:51,881 INFO    SenderThread:7208 [sender.py:finish():1545] shutting down sender
+2024-05-14 00:00:51,882 INFO    SenderThread:7208 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-14 00:00:51,882 INFO    SenderThread:7208 [file_pusher.py:join():175] waiting for file pusher
